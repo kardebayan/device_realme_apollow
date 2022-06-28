@@ -76,6 +76,11 @@ TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)-kernel/prebuilt/Image.gz-dtb
 # Platform
 TARGET_BOARD_PLATFORM := mt6833
 
+# Properties
+TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
+TARGET_SYSTEM_EXT_PROP += $(DEVICE_PATH)/system_ext.prop
+TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
+
 # Partitions
 BOARD_FLASH_BLOCK_SIZE := 131072
 BOARD_HAS_LARGE_FILESYSTEM := true
