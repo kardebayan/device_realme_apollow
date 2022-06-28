@@ -99,5 +99,8 @@ TARGET_COPY_OUT_SYSTEM_EXT := system_ext
 TARGET_COPY_OUT_VENDOR := vendor
 TARGET_USES_MKE2FS := true
 
+# Recovery
+TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.mt6833
+
 # Security patch level
 VENDOR_SECURITY_PATCH := 2022-03-05
